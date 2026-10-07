@@ -30,19 +30,31 @@ Polycystic Ovary Syndrome (PCOS)--recently renamed Polyendocrine Metabolic Ovari
 
 <b>Visualization</b>
 - Correlation heat maps for reproductive and comprehensive health factors
+<img width="1139" height="1054" alt="image" src="https://github.com/user-attachments/assets/41b25f98-d6ba-4705-a468-1b4eab1be496" />
+
 - Bar graphs of PCOS feature counts by PCOS Diagnosis for comprehensive health factors (weight gain, hair growth, skin darkening, hair loss, and pimples)
+<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/0acee783-4812-437a-bc52-fad1f7978de9" />
+
 - Scatterplot of left follicle count vs. right follicle count
+<img width="576" height="432" alt="image" src="https://github.com/user-attachments/assets/8abfd6cc-997f-4409-af40-73ea41311056" />
+
 - Boxplot FSH/LH by PCOS diagnosis and luteinizing hormone by PCOS diagnosis
+<img width="554" height="432" alt="image" src="https://github.com/user-attachments/assets/ccb56aa1-0761-4164-ae72-5b9f6139c076" />
 
 <b>Modeling</b>
-- Tested both a Decision Tree model and K-Nearest Neighbors (KNN) Model
-- Used a grid search to determine 6 neighbors as the optimal K for KNN 
+- Tested both a Decision Tree model (83.6% accuracy) and K-Nearest Neighbors (KNN) Model
+- Used a grid search to determine 6 neighbors as the optimal K for KNN (89.5% accuracy)
+<img width="576" height="432" alt="image" src="https://github.com/user-attachments/assets/a3377ba1-67ba-423f-abcf-6d56585cf571" />
+
 - Visualized the ROC curve and confusion matrix for model evaluation
+<img width="435" height="371" alt="image" src="https://github.com/user-attachments/assets/9500088a-f937-4be7-a29f-66992f175fde" />
+<img width="458" height="393" alt="image" src="https://github.com/user-attachments/assets/f915b967-0b0e-4e9b-aa18-c07d9088fa7f" />
 
 ## Key Insights
 - Increased follicle count positively correlates with a PCOS diagnosis, and combining left/right follicle counts preserves this finding
-- KNN outperformed the Decision Tree model, which suggests that proximity-based patterns best capture the relationship between features and diagnosis
+- KNN outperformed the Decision Tree model in accuracy, which suggests that proximity-based patterns best capture the relationship between features and diagnosis
 - Weight gain, hair growth, and skin darkening were all comprehensive features reported by a greater percentage of patients with PCOS than without. When added as focus features in the model, the model increased in accuracy
+- Women with PCOS had more variance in hormons levels than women without PCOS
 
 ## Limitations
 - The dataset didn't include androgens, which is one of the three criteria needed to determine if a patient has PCOS
